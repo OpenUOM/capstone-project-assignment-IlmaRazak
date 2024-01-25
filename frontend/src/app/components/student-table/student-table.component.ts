@@ -3,19 +3,19 @@ import { Router,NavigationExtras } from '@angular/router';
 import { faTrash, faPlus, faPenSquare } from '@fortawesome/free-solid-svg-icons';
 import {AppServiceService} from '../../app-service.service';
 @Component({
-  selector: 'app-student-table',
-  templateUrl: './student-table.component.html',
-  styleUrls: ['./student-table.component.css']
+selector: 'app-student-table',
+templateUrl: './student-table.component.html',
+styleUrls: ['./student-table.component.css']
 })
 export class StudentTableComponent implements OnInit {
 
-  faTrash = faTrash;
-  faPlus = faPlus;
-  faPenSquare = faPenSquare;
-  studentData: any;
-  selected: any;
+faTrash = faTrash;
+faPlus = faPlus;
+faPenSquare = faPenSquare;
+studentData: any;
+selected: any;
 
-  constructor(private service : AppServiceService, private router: Router) { }
+constructor(private service : AppServiceService, private router: Router) { }
 
   ngOnInit(): void {
     this.getStudentData();
