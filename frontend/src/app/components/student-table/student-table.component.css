@@ -8,7 +8,7 @@ table {
   
   td, th {
     /* border: 0.01px solid #dddddd; */
-    text-align: center;
+    text-align: left;
     padding: 8px;
   }
 
